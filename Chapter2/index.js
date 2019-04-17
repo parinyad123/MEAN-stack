@@ -2,8 +2,16 @@ var expess=require('express');
 var app = expess();
 
 app.get('/', function(req,res){
-    var myList = '<ul><li>Andriod</li><li>iOS</li></ul>'
-    res.send(myList);
+    res.send('Hello Expess');
+});
+
+
+app.get('/About', function(req,res){
+    res.send('Hello from About')
+});
+
+app.get('/Contact',function(req,res){
+    res.send('Hello from Contact')
 });
 
 app.listen(3000, function(){
