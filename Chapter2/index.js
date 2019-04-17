@@ -2,7 +2,8 @@ var expess=require('express');
 var app = expess();
 
 app.get('/', function(req,res){
-    res.send('Hello World');
+    var myList = '<ul><li>Andriod</li><li>iOS</li></ul>'
+    res.send(myList);
 });
 
 app.listen(3000, function(){
